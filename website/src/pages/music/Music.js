@@ -3,6 +3,8 @@ import React from "react";
 import Navigator from "../../components/Navigation/Navigator.js";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer.js";
 
+import useScript from "../../hooks/useScript.js";
+
 import * as VideoLinks from "../../constants/VideoLinks.js";
 
 export default () => {

@@ -1,0 +1,7 @@
+{
+  "python.pythonPath": "/usr/local/Caskroom/miniconda/base/envs/snugtrees/bin/python",
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.formatOnSave": false
+  }
+}
