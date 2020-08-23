@@ -1,11 +1,11 @@
 from snugback.server import app
-from snugback.api import *
+import snugback.api as api
 
-@app.route('/soundcloud/<string:name>')
+@app.route('/soundcloud/<string:name>', methods=['GET'])
 def getSoundCloudLinks(name):
-    return getSoundCloudLinks(name)
+    return api.getSoundCloudLinks(name)
 
 
-@app.route('/youtube/<string:name>')
+@app.route('/youtube/<string:name>', methods=['GET'])
 def getYouTubeLinks(name):
-    return getYouTubeLinks(name)
+    return api.getYouTubeLinks(name)
