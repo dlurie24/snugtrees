@@ -16,12 +16,8 @@ export default () => {
       headers: { "Content-Type": "application/json" },
     };
     fetch("/youtube/snugtrees", requestOptions)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setSnugtreesVideos(data.links);
-      })
+      .then((res) => res.json())
+      .then((data) => setSnugtreesVideos(data.links))
       .catch((err) => console.log(err));
   }, []);
 
@@ -32,12 +28,8 @@ export default () => {
       headers: { "Content-Type": "application/json" },
     };
     fetch("/youtube/secondfloorband", requestOptions)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setSfbVideos(data.links);
-      })
+      .then((res) => res.json())
+      .then((data) => setSfbVideos(data.links))
       .catch((err) => console.log(err));
   }, []);
 
@@ -48,12 +40,8 @@ export default () => {
       headers: { "Content-Type": "application/json" },
     };
     fetch("/youtube/thewhatwhy", requestOptions)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setTwwVideos(data.links);
-      })
+      .then((res) => res.json())
+      .then((data) => setTwwVideos(data.links))
       .then(() => setLoaded(true))
       .catch((err) => console.log(err));
   }, []);
