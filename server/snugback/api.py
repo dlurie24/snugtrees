@@ -23,7 +23,7 @@ def getYouTubeLinks(name):
 # ~ ~ ~ ~
 
 def getAllVideosFromChannel(channel_id):
-    api_key = const.API_KEY
+    api_key = const.YOUTUBE_API_KEY
 
     base_video_url = 'https://www.youtube.com/watch?v='
     base_search_url = 'https://www.googleapis.com/youtube/v3/search?'

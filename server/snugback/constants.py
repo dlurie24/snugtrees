@@ -1,4 +1,4 @@
-API_KEY = 'AIzaSyDCGIPcRT2bSIYOk1bOcc7_rNGmNuBw-cs'
+from api_keys.keys import *
 
 # SNUGTREES
 SNUGTREES = 'snugtrees'
