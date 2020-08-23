@@ -6,7 +6,7 @@ export default () => {
   return (
     <>
       <Navigator />
-      <div>SNUGTREES</div>
+      <div>WELCOME TO THE SITE</div>
     </>
   );
 };
